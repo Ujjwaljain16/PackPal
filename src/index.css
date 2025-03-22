@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+
+:root {
+  --primary-color: #ff9f1c;
+  --secondary-color: #76c7ad;
+  --dark-bg: #2b2b2b;
+  --light-bg: #3a3a3a;
+  --text-color: #fff;
+  --accent-color: #ff6b6b;
+  --input-bg: #444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+  color: var(--text-color);
+  background-color: var(--dark-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Monoton", sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+
+.add-form {
+  background-color: var(--light-bg);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+button,
+select,
+input {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-family: inherit;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-form button {
+  background-color: var(--primary-color);
+  color: var(--dark-bg);
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+select,
+input {
+  padding: 1rem;
+}
+
+.list {
+  background-color: var(--light-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.list ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--dark-bg);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.list li:hover {
+  background: var(--primary-color);
+  color: var(--dark-bg);
+}
+
+input[type="checkbox"] {
+  height: 2rem;
+  width: 2rem;
+  accent-color: var(--primary-color);
+}
+
+.list li button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.list li button:hover {
+  color: #fff;
+}
+
+
+.stats {
+  background-color: var(--secondary-color);
+  text-align: center;
+  font-weight: 700;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
